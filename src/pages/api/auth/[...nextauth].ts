@@ -42,10 +42,12 @@ export const authOptions = {
           )
         )
         return {
+          ...session,
           activeSubscription: userActiveSubscription
         }
       } catch {
         return {
+          ...session,
           activeSubscription: null
         }
       }
