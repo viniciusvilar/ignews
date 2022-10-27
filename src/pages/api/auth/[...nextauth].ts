@@ -2,7 +2,7 @@ import { query as q } from 'faunadb'
 
 import NextAuth from 'next-auth'
 import GithubProvider from 'next-auth/providers/github'
-
+import { signIn, signOut, useSession } from 'next-auth/react'
 import { fauna } from '../../../services/fauna';
 
 export const authOptions = {
@@ -17,7 +17,7 @@ export const authOptions = {
     // ...add more providers here
   ],
   callbacks: {
-    async session2(session) {
+    async session(session) {
       try {
         const userActiveSubscription = await fauna.query(
           q.Get(
@@ -29,7 +29,7 @@ export const authOptions = {
                   q.Get(
                     q.Match(
                       q.Index('user_by_email'),
-                      q.Casefold(session.user.email)
+                      q.Casefold(session['session'].user.email)
                     )
                   )
                 )

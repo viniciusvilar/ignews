@@ -7,6 +7,7 @@ import styles from './styles.module.scss'
 
 export function SignInButton() {
     const {data: session} = useSession()
+
     //{session.user.name}
     
     return session ? (
@@ -17,7 +18,7 @@ export function SignInButton() {
         >
 
             <FaGithub color='#04d361' />
-            {session.user.name}
+            {session['session'].user.name}
             <FiX color='#737380' className={styles.closeIcon}/>
         </button>
     ) : (
