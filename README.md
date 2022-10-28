@@ -25,5 +25,7 @@ Os posts são feito no CMS Prismic.
 ## Testando
 
 git clone https://github.com/viniciusvilar/ignews.git
+
 cd ignews
+
 yarn dev
