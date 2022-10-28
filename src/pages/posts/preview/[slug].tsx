@@ -7,8 +7,7 @@ import styles from '../post.module.scss';
 import Link from 'next/link';
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import { ROUTES_MANIFEST } from "next/dist/shared/lib/constants";
-import { getName } from "../../../components/SignInButton";
+
 
 interface PostPreviewProps {
     post: {
@@ -18,8 +17,6 @@ interface PostPreviewProps {
         updatedAt: string;
     }
 }
-
-
 
 export default function PostPreview({ post }: PostPreviewProps) {
     const {data: session} = useSession()
@@ -88,6 +85,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     return {
         props: {
             post,
-        }
+        },
+        redirect: 60 * 30, // 30 minutos
     }
 }
