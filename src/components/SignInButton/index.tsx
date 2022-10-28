@@ -5,6 +5,12 @@ import { signIn, signOut, useSession } from 'next-auth/react'
 
 import styles from './styles.module.scss'
 
+export function getName() {
+    const {data: session} = useSession()
+
+    return session
+}
+
 export function SignInButton() {
     const {data: session} = useSession()
 
