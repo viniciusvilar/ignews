@@ -1,4 +1,4 @@
-## SOBRE
+## Sobre
 
 O ig.news é um plataforma de assinatura de conteúdo escrito.
 
@@ -7,6 +7,15 @@ Possui um sistema de assunatura integrado com o Stripe. O usuário que não poss
 A autenticação é feita usando o NextAuth.js.
 
 Os posts são feito no CMS Prismic.
+
+## Imagens
+
+<p>
+  <img width="480" src="src/assets/foto001.PNG">
+  <img width="480" src="src/assets/foto002.PNG">
+  <img width="480" src="src/assets/foto003.PNG">
+  <img width="480" src="src/assets/foto004.PNG">
+</p>
 
 ## Tecnologias usada
 
