@@ -11,10 +11,10 @@ Os posts são feito no CMS Prismic.
 ## Imagens
 
 <p>
-  <img width="480" src="src/assets/foto001.PNG">
+  <img width="480" src="src/assets/foto001.png">
   <img width="480" src="src/assets/foto002.PNG">
   <img width="480" src="src/assets/foto003.PNG">
-  <img width="480" src="src/assets/foto004.PNG">
+  <img width="480" src="src/assets/foto004.png">
 </p>
 
 ## Tecnologias usada
