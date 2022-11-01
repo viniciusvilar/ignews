@@ -34,7 +34,12 @@ Os posts são feito no CMS Prismic.
 ## Testando
 
 ```bash
+## Clone o repositório
 git clone https://github.com/viniciusvilar/ignews.git
+
+## Va para a pasta
 cd ignews
+
+## Inicialize o projeto
 yarn dev
 ```
